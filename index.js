@@ -9,6 +9,7 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.add('open')
   else
     menuButton.classList.remove('open')
+  document.querySelector('body').style.overflowY = menuOpen ? 'auto' : 'hidden'
   menuOpen = !menuOpen
 })
 
