@@ -1,12 +1,10 @@
 # Interior Consultant
 ## Description
----
 First website for practice my skills with responsive design and BEM methodologies. Design from [interior-consultant-design](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb).
 
 <br>
 
 ## Screenshots
----
 <details>
   <summary style="font-size: 14px">Desktop</summary>
 
@@ -25,5 +23,4 @@ First website for practice my skills with responsive design and BEM methodologie
 <br>
 
 ## Thanks to
----
 - [devchallenges.io](https://devchallenges.io/)
