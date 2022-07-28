@@ -1,6 +1,10 @@
 .container {
   padding: 24px 12px;
   font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .header {
@@ -181,4 +185,52 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+}
+
+.footer {
+  padding-top: 35px;
+  width: 100%;
+  text-align: center;
+}
+.footer__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+}
+.footer__text a {
+  font-weight: 700;
+}
+
+@media screen and (max-height: 750px) {
+  .footer {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 24px 32px;
+  }
+  .footer {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    padding: 24px 24px;
+  }
+  .main {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+  .card {
+    width: 280px;
+  }
+  .footer {
+    padding-bottom: 0px;
+  }
 }
