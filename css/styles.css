@@ -1,0 +1,99 @@
+.container {
+  padding: 24px 12px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.logo-link {
+  border: 1px solid var(--text-color);
+  padding: 8px;
+}
+.logo-link__text {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.menu-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  z-index: 3;
+  gap: 3px;
+}
+.menu-button__line {
+  position: relative;
+  background-color: var(--text-color);
+  width: 18px;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.menu-button.open .menu-button__line:nth-child(2) {
+  opacity: 0;
+}
+.menu-button.open .menu-button__line:nth-child(1),
+.menu-button.open .menu-button__line:nth-child(3) {
+  background-color: var(--text-color);
+}
+.menu-button.open .menu-button__line:nth-child(1) {
+  transform: rotate(45deg) translateY(8.5px);
+}
+.menu-button.open .menu-button__line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8.5px);
+}
+.nav {
+  position: absolute;
+  top: 0;
+  left: -4000px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  transition-property: left;
+}
+.logo-link,
+.menu-button__line,
+.menu-button__line::before,
+.menu-button__line::after,
+.nav {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+.menu-button.open ~ .nav {
+  left: 0;
+}
+.nav__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.nav__link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.nav__link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
