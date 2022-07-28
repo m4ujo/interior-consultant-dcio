@@ -1,5 +1,6 @@
 .container {
   padding: 24px 12px;
+  font-family: var(--primary-font);
 }
 
 .header {
@@ -15,7 +16,7 @@
   padding: 8px;
 }
 .logo-link__text {
-  font-family: "Crimson Pro";
+  font-family: var(--special-font);
   font-style: normal;
   font-weight: 200;
   font-size: 14px;
@@ -87,7 +88,6 @@
 .nav__link {
   color: var(--text-color);
   text-decoration: none;
-  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -96,4 +96,37 @@
 .nav__link:hover {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.left-side {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.left-side__title {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+}
+.left-side__description,
+.read-more__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.read-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.read-more__text {
+  display: inline;
+  font-weight: 700;
 }
