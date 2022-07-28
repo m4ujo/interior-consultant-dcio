@@ -193,12 +193,12 @@
   text-align: center;
 }
 .footer__text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 .footer__text a {
   font-weight: 700;
@@ -218,9 +218,29 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .container {
-    padding: 24px 24px;
+    padding: 50px 76px;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .menu-button {
+    display: none;
+  }
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .nav__content {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+  .nav__link {
+    font-size: 14px;
   }
   .main {
     flex-direction: row;
@@ -232,5 +252,60 @@
   }
   .footer {
     padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .nav__link {
+    font-size: 18px;
+  }
+  .left-side__title {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  .left-side__description {
+    /* width: 500px; */
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .read-more__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .card {
+    width: 410px;
+  }
+  .card__header {
+    padding: 24px 30px;
+  }
+  .card__image {
+    width: 50px;
+  }
+  .card__name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .card__job {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .card__main {
+    padding: 0 34px;
+    padding-bottom: 34px;
+  }
+  .card__text {
+    width: 287px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    padding: 50px 90px;
+  }
+  .main {
+    padding: 50px 100px;
+  }
+}
+@media screen and (min-width: 1775px) {
+  .footer {
+    padding-bottom: 24px;
   }
 }
