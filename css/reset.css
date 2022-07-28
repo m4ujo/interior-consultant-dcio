@@ -1,3 +1,17 @@
+:root {
+  --background-color: #181719;
+  --text-color: #ffffff;
+  --text-color-secondary: #828282;
+  --primary-font: 'Montserrat';
+  --secondary-font: 'Lora';
+  --special-font: 'Crimson Pro';
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
 * {
   margin: 0;
   padding: 0;
